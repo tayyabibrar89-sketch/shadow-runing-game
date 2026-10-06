@@ -1,0 +1,6 @@
+{
+  "name": "Shadow Runner 3D: Cyber City",
+  "description": "High-octane 3D cyberpunk endless runner with dynamic 3-lane mechanics, acrobatic stunts, boss battles, cyber upgrades, and rich neon environments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

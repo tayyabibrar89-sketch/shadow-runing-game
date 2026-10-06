@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: 'Orbitron', monospace, sans-serif;
+  --font-rajdhani: 'Rajdhani', sans-serif;
+}
+
+:root {
+  --bg: #03050b;
+  --panel: rgba(7, 12, 22, 0.94);
+  --panel2: rgba(11, 18, 32, 0.92);
+  --edge: #16283e;
+  --cyan: #19e3ff;
+  --mag: #ff2d78;
+  --amber: #ffc857;
+  --grn: #2dffd6;
+  --txt: #d5e8f5;
+  --dim: #647d96;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: var(--bg);
+  color: var(--txt);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+/* Cyber cut corners clip path */
+.cut {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+
+.cut-sm {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+}
+
+/* Subtle CRT scanline effect on overlay */
+.scanlines {
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 16, 26, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: #1c3248;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a4866;
+}
